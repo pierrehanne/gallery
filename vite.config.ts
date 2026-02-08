@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: './', // Using relative base for better GitHub Pages compatibility
+    base: process.env.NODE_ENV === 'production' ? '/gallery/' : '/',
 
     build: {
         target: 'ES2020',
