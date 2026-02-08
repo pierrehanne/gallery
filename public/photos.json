@@ -1,0 +1,132 @@
+{
+  "title": "WanderFrames — A Travel Photo Gallery",
+  "description": "Travel is the art of seeing what others pass by.",
+  "albums": [
+    {
+      "id": "japan",
+      "name": "Japan",
+      "description": "Photos from Japan"
+    },
+    {
+      "id": "usa",
+      "name": "USA",
+      "description": "Photos from the USA"
+    }
+  ],
+  "photos": [
+    {
+      "id": "japan-001",
+      "src": "images/japan/japan-001-full.jpeg",
+      "thumbnail": "images/japan/japan-001-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-002",
+      "src": "images/japan/japan-002-full.jpeg",
+      "thumbnail": "images/japan/japan-002-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-003",
+      "src": "images/japan/japan-003-full.jpeg",
+      "thumbnail": "images/japan/japan-003-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-004",
+      "src": "images/japan/japan-004-full.jpeg",
+      "thumbnail": "images/japan/japan-004-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-005",
+      "src": "images/japan/japan-005-full.jpeg",
+      "thumbnail": "images/japan/japan-005-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-006",
+      "src": "images/japan/japan-006-full.jpeg",
+      "thumbnail": "images/japan/japan-006-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-007",
+      "src": "images/japan/japan-007-full.jpeg",
+      "thumbnail": "images/japan/japan-007-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-008",
+      "src": "images/japan/japan-008-full.jpeg",
+      "thumbnail": "images/japan/japan-008-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-009",
+      "src": "images/japan/japan-009-full.jpeg",
+      "thumbnail": "images/japan/japan-009-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-010",
+      "src": "images/japan/japan-010-full.jpeg",
+      "thumbnail": "images/japan/japan-010-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-011",
+      "src": "images/japan/japan-011-full.jpeg",
+      "thumbnail": "images/japan/japan-011-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-012",
+      "src": "images/japan/japan-012-full.jpeg",
+      "thumbnail": "images/japan/japan-012-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-013",
+      "src": "images/japan/japan-013-full.jpeg",
+      "thumbnail": "images/japan/japan-013-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-014",
+      "src": "images/japan/japan-014-full.jpeg",
+      "thumbnail": "images/japan/japan-014-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-015",
+      "src": "images/japan/japan-015-full.jpeg",
+      "thumbnail": "images/japan/japan-015-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "japan-016",
+      "src": "images/japan/japan-016-full.jpeg",
+      "thumbnail": "images/japan/japan-016-thumb.jpeg",
+      "album": "japan"
+    },
+    {
+      "id": "usa-001",
+      "src": "images/usa/usa-001-full.jpeg",
+      "thumbnail": "images/usa/usa-001-thumb.jpeg",
+      "album": "usa"
+    },
+    {
+      "id": "usa-002",
+      "src": "images/usa/usa-002-full.jpeg",
+      "thumbnail": "images/usa/usa-002-thumb.jpeg",
+      "album": "usa"
+    },
+    {
+      "id": "usa-003",
+      "src": "images/usa/usa-003-full.jpeg",
+      "thumbnail": "images/usa/usa-003-thumb.jpeg",
+      "album": "usa"
+    }
+  ]
+}

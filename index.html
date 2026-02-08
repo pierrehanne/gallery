@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pierre Hanne Photography Portfolio" />
+    <title>Pierre Hanne | Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Skip to main content link for accessibility -->
+        <a href="#gallery-container" class="skip-link">Skip to main content</a>
+
+        <!-- Header -->
+        <header class="portfolio-header">
+            <div class="header-brand">
+                <h1 class="brand-name">PIERRE HANNE</h1>
+                <span class="brand-tagline">Photography</span>
+            </div>
+            <nav id="filter-container" class="header-nav" aria-label="Photo filters">
+                <!-- Category tabs will be rendered here -->
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main id="gallery-container" class="gallery-main">
+            <!-- Gallery section -->
+            <section class="gallery-section">
+                <!-- Gallery grid will be rendered here -->
+                <div id="gallery-grid" class="gallery-grid" role="region" aria-label="Photo gallery grid">
+                    <!-- Photos will be rendered here -->
+                </div>
+
+                <!-- No results message -->
+                <div id="no-results" class="no-results" style="display: none;" role="status" aria-live="polite">
+                    <p>No photos match your filters. Try adjusting your selection.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Lightbox container -->
+        <div id="lightbox-container" class="lightbox-container" role="dialog" aria-modal="true"
+            aria-labelledby="lightbox-title" aria-describedby="lightbox-description" aria-hidden="true">
+            <!-- Lightbox will be rendered here -->
+        </div>
+
+        <!-- Loading indicator -->
+        <div id="loading-indicator" class="loading-indicator" role="status" aria-live="polite"
+            aria-label="Loading photos" style="display: none;">
+            <span class="sr-only">Loading gallery photos...</span>
+        </div>
+
+        <!-- Filter results announcement -->
+        <div id="filter-results-announcement" class="sr-only" role="status" aria-live="polite">
+        </div>
+
+        <!-- Footer -->
+        <footer class="portfolio-footer">
+            <p>&copy; 2024 Pierre Hanne. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
