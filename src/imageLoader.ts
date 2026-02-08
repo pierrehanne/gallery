@@ -13,7 +13,7 @@ export class ImageLoader {
      * @param imagePath - The image path (relative or absolute)
      * @returns The resolved image path
      */
-    getResponsiveImageUrl(imagePath: string, _context?: 'thumbnail' | 'fullsize'): string {
+    getResponsiveImageUrl(imagePath: string): string {
         // If the path is already absolute or a data URL, return as-is
         if (imagePath.startsWith('/') || imagePath.startsWith('data:') || imagePath.startsWith('http')) {
             return imagePath;
