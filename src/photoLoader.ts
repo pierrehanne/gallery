@@ -22,12 +22,8 @@ import {
  */
 export async function loadGalleryConfig(): Promise<GalleryConfig> {
   try {
-    // Get the base path for proper subdirectory support (GitHub Pages)
-    const basePath = getBasePath();
-    const configUrl = new URL(
-      "photos.json",
-      `${window.location.origin}${basePath}`,
-    ).href;
+    // Use Vite's base URL for proper subdirectory support (GitHub Pages)
+    const configUrl = `${import.meta.env.BASE_URL}photos.json`;
 
     const response = await fetch(configUrl);
     if (!response.ok) {
@@ -51,33 +47,6 @@ export async function loadGalleryConfig(): Promise<GalleryConfig> {
   }
 }
 
-/**
- * Gets the base path for the application.
- * This supports GitHub Pages subdirectory deployments.
- * Requirements: 10.2
- *
- * @returns The base path (e.g., '/' or '/gallery/')
- */
-function getBasePath(): string {
-  // Check if there's a base element in the document
-  const baseElement = document.querySelector("base");
-  if (baseElement?.href) {
-    const url = new URL(baseElement.href);
-    return url.pathname;
-  }
-
-  // Fallback: use the current pathname to infer the base path
-  // For GitHub Pages, the pathname will be /repository-name/
-  const pathname = window.location.pathname;
-
-  // If we're at the root, return '/'
-  if (pathname === "/" || pathname === "") {
-    return "/";
-  }
-
-  // Otherwise, return the pathname (which should be the base path)
-  return pathname.endsWith("/") ? pathname : pathname + "/";
-}
 
 /**
  * Loads and validates photos from the gallery configuration.
