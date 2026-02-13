@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Gallery } from './components/Gallery';
 import { Filter } from './components/Filter';
-import { ThemeToggle } from './components/ThemeToggle';
 import { Photo, Album } from './types';
 import { loadGalleryData } from './photoLoader';
 
@@ -60,10 +59,6 @@ function App() {
 
     return (
         <div className="app-container">
-            <div className="theme-toggle-container">
-                <ThemeToggle />
-            </div>
-
             <header className="app-header">
                 <h1>{title}</h1>
                 <p>{description}</p>
