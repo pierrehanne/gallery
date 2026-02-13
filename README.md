@@ -4,16 +4,16 @@
 [![React](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7.3-646cff.svg)](https://vitejs.dev/)
 
-High-performance photo gallery with masonry layout, lightbox viewer, and dark mode. Zero runtime dependencies.
+Modern photo gallery with masonry layout, smooth animations, and dark mode. Built with React 19 and Framer Motion.
 
 ## Features
 
 - **Masonry Layout** – Responsive grid with CSS columns
-- **Lightbox Viewer** – Full-screen navigation with keyboard controls
-- **Category Filtering** – Tab-based album filtering
+- **Smooth Animations** – Framer Motion powered transitions and hover effects
+- **Album Filtering** – Interactive tab-based category filtering
 - **Dark Mode** – System preference detection with manual toggle
-- **Lazy Loading** – IntersectionObserver-based scroll animations
-- **Type-Safe** – Full TypeScript coverage with property-based testing
+- **Lazy Loading** – Native lazy loading for optimized performance
+- **Type-Safe** – Full TypeScript coverage with comprehensive testing
 
 ## Quick Start
 
@@ -34,18 +34,27 @@ npm run lint         # ESLint validation
 ## Tech Stack
 
 **Core:** React 19 · TypeScript 5.9 · Vite 7.3
-**Testing:** Vitest 4 · fast-check · jsdom
+**Animation:** Framer Motion 12
+**Testing:** Vitest 4 · Testing Library · jsdom
 **Tooling:** ESLint 9 · Prettier
 
 ## Project Structure
 
 ```
 src/
-├── components/      # Gallery, Filter, Lightbox, ThemeToggle
+├── components/      # Gallery, Filter, ThemeToggle
 ├── App.tsx          # Application controller
+├── main.tsx         # Application entry point
 ├── imageLoader.ts   # Responsive image loading
 ├── photoLoader.ts   # Data fetching & validation
-└── types.ts         # TypeScript definitions
+├── types.ts         # TypeScript definitions
+└── styles/          # CSS styles
+
+tests/               # Test suite
+├── App.test.tsx
+├── Gallery.test.tsx
+├── Filter.test.tsx
+└── photoLoader.test.ts
 ```
 
 ## Requirements
