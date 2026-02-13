@@ -18,10 +18,6 @@ vi.mock('../src/components/Filter', () => ({
     )
 }));
 
-vi.mock('../src/components/ThemeToggle', () => ({
-    ThemeToggle: () => <div data-testid="theme-toggle">Toggle</div>
-}));
-
 // Mock photoLoader
 vi.mock('../src/photoLoader', () => ({
     loadGalleryData: vi.fn()
@@ -66,9 +62,6 @@ describe('App Component', () => {
 
         // Check Filter prop
         expect(screen.getByTestId('filter').textContent).toContain('Filter with 2 albums');
-
-        // Check ThemeToggle
-        expect(screen.getByTestId('theme-toggle')).toBeDefined();
     });
 
     it('filters photos when album is selected', async () => {
